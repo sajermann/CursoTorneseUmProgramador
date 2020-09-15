@@ -1,0 +1,13 @@
+E:\Programação\Github\CursoTorneseUmProgramador\tipos_de_variaveis\tipos_de_variaveis\bin\Debug\netcoreapp3.1\tipos_de_variaveis.exe
+E:\Programação\Github\CursoTorneseUmProgramador\tipos_de_variaveis\tipos_de_variaveis\bin\Debug\netcoreapp3.1\tipos_de_variaveis.deps.json
+E:\Programação\Github\CursoTorneseUmProgramador\tipos_de_variaveis\tipos_de_variaveis\bin\Debug\netcoreapp3.1\tipos_de_variaveis.runtimeconfig.json
+E:\Programação\Github\CursoTorneseUmProgramador\tipos_de_variaveis\tipos_de_variaveis\bin\Debug\netcoreapp3.1\tipos_de_variaveis.runtimeconfig.dev.json
+E:\Programação\Github\CursoTorneseUmProgramador\tipos_de_variaveis\tipos_de_variaveis\bin\Debug\netcoreapp3.1\tipos_de_variaveis.dll
+E:\Programação\Github\CursoTorneseUmProgramador\tipos_de_variaveis\tipos_de_variaveis\bin\Debug\netcoreapp3.1\tipos_de_variaveis.pdb
+E:\Programação\Github\CursoTorneseUmProgramador\tipos_de_variaveis\tipos_de_variaveis\obj\Debug\netcoreapp3.1\tipos_de_variaveis.csprojAssemblyReference.cache
+E:\Programação\Github\CursoTorneseUmProgramador\tipos_de_variaveis\tipos_de_variaveis\obj\Debug\netcoreapp3.1\tipos_de_variaveis.AssemblyInfoInputs.cache
+E:\Programação\Github\CursoTorneseUmProgramador\tipos_de_variaveis\tipos_de_variaveis\obj\Debug\netcoreapp3.1\tipos_de_variaveis.AssemblyInfo.cs
+E:\Programação\Github\CursoTorneseUmProgramador\tipos_de_variaveis\tipos_de_variaveis\obj\Debug\netcoreapp3.1\tipos_de_variaveis.csproj.CoreCompileInputs.cache
+E:\Programação\Github\CursoTorneseUmProgramador\tipos_de_variaveis\tipos_de_variaveis\obj\Debug\netcoreapp3.1\tipos_de_variaveis.dll
+E:\Programação\Github\CursoTorneseUmProgramador\tipos_de_variaveis\tipos_de_variaveis\obj\Debug\netcoreapp3.1\tipos_de_variaveis.pdb
+E:\Programação\Github\CursoTorneseUmProgramador\tipos_de_variaveis\tipos_de_variaveis\obj\Debug\netcoreapp3.1\tipos_de_variaveis.genruntimeconfig.cache
