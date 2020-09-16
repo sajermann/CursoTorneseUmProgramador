@@ -1,0 +1,13 @@
+E:\Programação\Github\CursoTorneseUmProgramador\loops\loops\bin\Debug\netcoreapp3.1\loops.exe
+E:\Programação\Github\CursoTorneseUmProgramador\loops\loops\bin\Debug\netcoreapp3.1\loops.deps.json
+E:\Programação\Github\CursoTorneseUmProgramador\loops\loops\bin\Debug\netcoreapp3.1\loops.runtimeconfig.json
+E:\Programação\Github\CursoTorneseUmProgramador\loops\loops\bin\Debug\netcoreapp3.1\loops.runtimeconfig.dev.json
+E:\Programação\Github\CursoTorneseUmProgramador\loops\loops\bin\Debug\netcoreapp3.1\loops.dll
+E:\Programação\Github\CursoTorneseUmProgramador\loops\loops\bin\Debug\netcoreapp3.1\loops.pdb
+E:\Programação\Github\CursoTorneseUmProgramador\loops\loops\obj\Debug\netcoreapp3.1\loops.csprojAssemblyReference.cache
+E:\Programação\Github\CursoTorneseUmProgramador\loops\loops\obj\Debug\netcoreapp3.1\loops.AssemblyInfoInputs.cache
+E:\Programação\Github\CursoTorneseUmProgramador\loops\loops\obj\Debug\netcoreapp3.1\loops.AssemblyInfo.cs
+E:\Programação\Github\CursoTorneseUmProgramador\loops\loops\obj\Debug\netcoreapp3.1\loops.csproj.CoreCompileInputs.cache
+E:\Programação\Github\CursoTorneseUmProgramador\loops\loops\obj\Debug\netcoreapp3.1\loops.dll
+E:\Programação\Github\CursoTorneseUmProgramador\loops\loops\obj\Debug\netcoreapp3.1\loops.pdb
+E:\Programação\Github\CursoTorneseUmProgramador\loops\loops\obj\Debug\netcoreapp3.1\loops.genruntimeconfig.cache
