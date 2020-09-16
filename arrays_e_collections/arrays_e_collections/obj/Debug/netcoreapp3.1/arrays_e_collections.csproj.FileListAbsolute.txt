@@ -1,0 +1,13 @@
+E:\Programação\Github\CursoTorneseUmProgramador\arrays_e_collections\arrays_e_collections\bin\Debug\netcoreapp3.1\arrays_e_collections.exe
+E:\Programação\Github\CursoTorneseUmProgramador\arrays_e_collections\arrays_e_collections\bin\Debug\netcoreapp3.1\arrays_e_collections.deps.json
+E:\Programação\Github\CursoTorneseUmProgramador\arrays_e_collections\arrays_e_collections\bin\Debug\netcoreapp3.1\arrays_e_collections.runtimeconfig.json
+E:\Programação\Github\CursoTorneseUmProgramador\arrays_e_collections\arrays_e_collections\bin\Debug\netcoreapp3.1\arrays_e_collections.runtimeconfig.dev.json
+E:\Programação\Github\CursoTorneseUmProgramador\arrays_e_collections\arrays_e_collections\bin\Debug\netcoreapp3.1\arrays_e_collections.dll
+E:\Programação\Github\CursoTorneseUmProgramador\arrays_e_collections\arrays_e_collections\bin\Debug\netcoreapp3.1\arrays_e_collections.pdb
+E:\Programação\Github\CursoTorneseUmProgramador\arrays_e_collections\arrays_e_collections\obj\Debug\netcoreapp3.1\arrays_e_collections.csprojAssemblyReference.cache
+E:\Programação\Github\CursoTorneseUmProgramador\arrays_e_collections\arrays_e_collections\obj\Debug\netcoreapp3.1\arrays_e_collections.AssemblyInfoInputs.cache
+E:\Programação\Github\CursoTorneseUmProgramador\arrays_e_collections\arrays_e_collections\obj\Debug\netcoreapp3.1\arrays_e_collections.AssemblyInfo.cs
+E:\Programação\Github\CursoTorneseUmProgramador\arrays_e_collections\arrays_e_collections\obj\Debug\netcoreapp3.1\arrays_e_collections.csproj.CoreCompileInputs.cache
+E:\Programação\Github\CursoTorneseUmProgramador\arrays_e_collections\arrays_e_collections\obj\Debug\netcoreapp3.1\arrays_e_collections.dll
+E:\Programação\Github\CursoTorneseUmProgramador\arrays_e_collections\arrays_e_collections\obj\Debug\netcoreapp3.1\arrays_e_collections.pdb
+E:\Programação\Github\CursoTorneseUmProgramador\arrays_e_collections\arrays_e_collections\obj\Debug\netcoreapp3.1\arrays_e_collections.genruntimeconfig.cache
