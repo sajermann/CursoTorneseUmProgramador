@@ -1,0 +1,13 @@
+E:\Programação\Github\CursoTorneseUmProgramador\funcoes_recursivas\funcoes_recursivas\bin\Debug\netcoreapp3.1\funcoes_recursivas.exe
+E:\Programação\Github\CursoTorneseUmProgramador\funcoes_recursivas\funcoes_recursivas\bin\Debug\netcoreapp3.1\funcoes_recursivas.deps.json
+E:\Programação\Github\CursoTorneseUmProgramador\funcoes_recursivas\funcoes_recursivas\bin\Debug\netcoreapp3.1\funcoes_recursivas.runtimeconfig.json
+E:\Programação\Github\CursoTorneseUmProgramador\funcoes_recursivas\funcoes_recursivas\bin\Debug\netcoreapp3.1\funcoes_recursivas.runtimeconfig.dev.json
+E:\Programação\Github\CursoTorneseUmProgramador\funcoes_recursivas\funcoes_recursivas\bin\Debug\netcoreapp3.1\funcoes_recursivas.dll
+E:\Programação\Github\CursoTorneseUmProgramador\funcoes_recursivas\funcoes_recursivas\bin\Debug\netcoreapp3.1\funcoes_recursivas.pdb
+E:\Programação\Github\CursoTorneseUmProgramador\funcoes_recursivas\funcoes_recursivas\obj\Debug\netcoreapp3.1\funcoes_recursivas.csprojAssemblyReference.cache
+E:\Programação\Github\CursoTorneseUmProgramador\funcoes_recursivas\funcoes_recursivas\obj\Debug\netcoreapp3.1\funcoes_recursivas.AssemblyInfoInputs.cache
+E:\Programação\Github\CursoTorneseUmProgramador\funcoes_recursivas\funcoes_recursivas\obj\Debug\netcoreapp3.1\funcoes_recursivas.AssemblyInfo.cs
+E:\Programação\Github\CursoTorneseUmProgramador\funcoes_recursivas\funcoes_recursivas\obj\Debug\netcoreapp3.1\funcoes_recursivas.csproj.CoreCompileInputs.cache
+E:\Programação\Github\CursoTorneseUmProgramador\funcoes_recursivas\funcoes_recursivas\obj\Debug\netcoreapp3.1\funcoes_recursivas.dll
+E:\Programação\Github\CursoTorneseUmProgramador\funcoes_recursivas\funcoes_recursivas\obj\Debug\netcoreapp3.1\funcoes_recursivas.pdb
+E:\Programação\Github\CursoTorneseUmProgramador\funcoes_recursivas\funcoes_recursivas\obj\Debug\netcoreapp3.1\funcoes_recursivas.genruntimeconfig.cache
