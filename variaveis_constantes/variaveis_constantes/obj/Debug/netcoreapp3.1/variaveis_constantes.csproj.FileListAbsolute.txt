@@ -1,0 +1,13 @@
+E:\Programação\Github\CursoTorneseUmProgramador\variaveis_constantes\variaveis_constantes\bin\Debug\netcoreapp3.1\variaveis_constantes.exe
+E:\Programação\Github\CursoTorneseUmProgramador\variaveis_constantes\variaveis_constantes\bin\Debug\netcoreapp3.1\variaveis_constantes.deps.json
+E:\Programação\Github\CursoTorneseUmProgramador\variaveis_constantes\variaveis_constantes\bin\Debug\netcoreapp3.1\variaveis_constantes.runtimeconfig.json
+E:\Programação\Github\CursoTorneseUmProgramador\variaveis_constantes\variaveis_constantes\bin\Debug\netcoreapp3.1\variaveis_constantes.runtimeconfig.dev.json
+E:\Programação\Github\CursoTorneseUmProgramador\variaveis_constantes\variaveis_constantes\bin\Debug\netcoreapp3.1\variaveis_constantes.dll
+E:\Programação\Github\CursoTorneseUmProgramador\variaveis_constantes\variaveis_constantes\bin\Debug\netcoreapp3.1\variaveis_constantes.pdb
+E:\Programação\Github\CursoTorneseUmProgramador\variaveis_constantes\variaveis_constantes\obj\Debug\netcoreapp3.1\variaveis_constantes.csprojAssemblyReference.cache
+E:\Programação\Github\CursoTorneseUmProgramador\variaveis_constantes\variaveis_constantes\obj\Debug\netcoreapp3.1\variaveis_constantes.AssemblyInfoInputs.cache
+E:\Programação\Github\CursoTorneseUmProgramador\variaveis_constantes\variaveis_constantes\obj\Debug\netcoreapp3.1\variaveis_constantes.AssemblyInfo.cs
+E:\Programação\Github\CursoTorneseUmProgramador\variaveis_constantes\variaveis_constantes\obj\Debug\netcoreapp3.1\variaveis_constantes.csproj.CoreCompileInputs.cache
+E:\Programação\Github\CursoTorneseUmProgramador\variaveis_constantes\variaveis_constantes\obj\Debug\netcoreapp3.1\variaveis_constantes.dll
+E:\Programação\Github\CursoTorneseUmProgramador\variaveis_constantes\variaveis_constantes\obj\Debug\netcoreapp3.1\variaveis_constantes.pdb
+E:\Programação\Github\CursoTorneseUmProgramador\variaveis_constantes\variaveis_constantes\obj\Debug\netcoreapp3.1\variaveis_constantes.genruntimeconfig.cache
