@@ -1,0 +1,13 @@
+E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\bin\Debug\netcoreapp3.1\Console_App.exe
+E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\bin\Debug\netcoreapp3.1\Console_App.deps.json
+E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\bin\Debug\netcoreapp3.1\Console_App.runtimeconfig.json
+E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\bin\Debug\netcoreapp3.1\Console_App.runtimeconfig.dev.json
+E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\bin\Debug\netcoreapp3.1\Console_App.dll
+E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\bin\Debug\netcoreapp3.1\Console_App.pdb
+E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\obj\Debug\netcoreapp3.1\Console_App.csprojAssemblyReference.cache
+E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\obj\Debug\netcoreapp3.1\Console_App.AssemblyInfoInputs.cache
+E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\obj\Debug\netcoreapp3.1\Console_App.AssemblyInfo.cs
+E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\obj\Debug\netcoreapp3.1\Console_App.csproj.CoreCompileInputs.cache
+E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\obj\Debug\netcoreapp3.1\Console_App.dll
+E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\obj\Debug\netcoreapp3.1\Console_App.pdb
+E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\obj\Debug\netcoreapp3.1\Console_App.genruntimeconfig.cache
