@@ -41,16 +41,15 @@ namespace Classes
         /// <summary>
         /// Construtor sem parâmetros
         /// </summary>
-        public Cliente()
-        {
-            
-        }
+        public Cliente(){}
 
         public static string Teste;
 
         public string Nome;
         public string Telefone;
         public string Cpf;
+
+        private string sobrenome = "Santos";
 
         public void Gravar()
         {
@@ -78,6 +77,12 @@ namespace Classes
                 r.Close();
             }
         }
+
+        private void Olhar()
+        {
+            Console.WriteLine("O cliente " + this.Nome + " " + this.sobrenome + " está olhando para mim");
+        }
+
         private static string caminhoBaseClientes()
         {
             return ConfigurationManager.AppSettings["BaseDeClientes"];

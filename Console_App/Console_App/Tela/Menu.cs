@@ -13,6 +13,9 @@ namespace Tela
         public const int LER_ARQUIVOS = 1;
         public const int TABUADA = 2;
         public const int CALCULO_MEDIA = 3;
+        public const int CADASTRAR_CLIENTES = 4;
+
+
         public static void Criar()
         {
             while (true)
@@ -24,7 +27,8 @@ namespace Tela
                     "\n     0 - Sair do programa" +
                     "\n     1 - Para Ler arquivos" +
                     "\n     2 - Para Executar a tabuada" +
-                    "\n     3 - Para Cálcular média de alunos";
+                    "\n     3 - Para Cálcular média de alunos" + 
+                    "\n     4 - Cadastrar Clientes";
                 Console.WriteLine(mensagem);
 
                 int valor = Convert.ToInt32(Console.ReadLine());
@@ -52,6 +56,12 @@ namespace Tela
                 {
                     Console.WriteLine("======================Opção Cálculo Média==========================");
                     Media.Aluno();
+                    Console.WriteLine("===================================================================");
+                }
+                else if (valor == CADASTRAR_CLIENTES)
+                {
+                    Console.WriteLine("======================Opção Cadastrar Cliente======================");
+                    TelaCliente.Chamar();
                     Console.WriteLine("===================================================================");
                 }
                 else
