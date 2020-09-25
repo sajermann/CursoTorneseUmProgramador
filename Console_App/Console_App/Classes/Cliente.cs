@@ -51,6 +51,26 @@ namespace Classes
 
         private string sobrenome = "Santos";
 
+        protected int CalcularUmaMaisDois()
+        {
+            return 1 + 2;
+        }
+
+        private int CalcularUmaMaisDois2()
+        {
+            return 1 + 2;
+        }
+
+        public int CalcularUmaMaisDois3()
+        {
+            return 1 + 2;
+        }
+
+        internal int CalcularUmaMaisDois4()
+        {
+            return 1 + 2;
+        }
+
         public virtual void Gravar()
         {
             var clientes = Cliente.LerClientes();

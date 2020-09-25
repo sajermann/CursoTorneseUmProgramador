@@ -148,6 +148,16 @@
             "rid": "win"
           }
         }
+      },
+      "Componentes/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Componentes.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Componentes.dll": {}
+        }
       }
     }
   },
@@ -452,10 +462,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Componentes/1.0.0": {
+      "type": "project",
+      "path": "../Componentes/Componentes.csproj",
+      "msbuildProject": "../Componentes/Componentes.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Componentes >= 1.0.0",
       "System.Configuration.ConfigurationManager >= 4.7.0"
     ]
   },
@@ -484,7 +500,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Programação\\Github\\CursoTorneseUmProgramador\\Console_App\\Componentes\\Componentes.csproj": {
+              "projectPath": "E:\\Programação\\Github\\CursoTorneseUmProgramador\\Console_App\\Componentes\\Componentes.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

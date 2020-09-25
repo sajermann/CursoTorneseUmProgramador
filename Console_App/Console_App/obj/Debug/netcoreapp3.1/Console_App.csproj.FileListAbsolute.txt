@@ -24,3 +24,5 @@ E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\bin\De
 E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\obj\Debug\netcoreapp3.1\Console_App.csproj.CoreCompileInputs.cache
 E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\obj\Debug\netcoreapp3.1\Console_App.csproj.CopyComplete
+E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\bin\Debug\netcoreapp3.1\Componentes.dll
+E:\Programação\Github\CursoTorneseUmProgramador\Console_App\Console_App\bin\Debug\netcoreapp3.1\Componentes.pdb

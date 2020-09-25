@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using Classes;
+using Componentes;
 
 namespace Console_App
 {
@@ -25,6 +26,13 @@ namespace Console_App
             //    Console.WriteLine(cl.Cpf);
             //    Console.WriteLine("=================================");
             //}
+
+            Ferramentas f = new Ferramentas();
+            f.ValidarCpf("9595");
+            
+            Cliente c = new Cliente();
+
+            c.CalcularUmaMaisDois4();
 
             Console.WriteLine("=============Cadastro de Usuario====================");
             Usuario u = new Usuario();
