@@ -2,3 +2,5 @@ nome;telefone;cpf;
 Bruno;11999999999;99999999999;
 Márcia;11999999999;99999999999;
 San;uihsjduih;2156151515;
+San;uihsjduih;2156151515;
+Cliente;uihsjduih;2156151515;

@@ -51,83 +51,48 @@ namespace Classes
 
         private string sobrenome = "Santos";
 
-        public void Gravar()
+        public virtual void Gravar()
         {
-            if (this.GetType() == typeof(Cliente))
+            var clientes = Cliente.LerClientes();
+            clientes.Add(this);
+
+            if (File.Exists(caminhoBase()))
             {
-                var clientes = Cliente.LerClientes();
-                clientes.Add(this);
+                //string conteudo = "nome;telefone;cpf;\n";
+                //foreach (Cliente c in clientes)
+                //{
+                //    conteudo += c.Nome + ";" + c.Telefone + ";" + c.Cpf + ";\n";
+                //}
+                //File.WriteAllText(caminhoBaseClientes(), conteudo);
 
-                if (File.Exists(caminhoBaseClientes()))
+                //Metódo 2 para gravar
+                StreamWriter r = new StreamWriter(caminhoBase());
+                r.WriteLine("nome;telefone;cpf;");
+                foreach (Cliente c in clientes)
                 {
-                    //string conteudo = "nome;telefone;cpf;\n";
-                    //foreach (Cliente c in clientes)
-                    //{
-                    //    conteudo += c.Nome + ";" + c.Telefone + ";" + c.Cpf + ";\n";
-                    //}
-                    //File.WriteAllText(caminhoBaseClientes(), conteudo);
-
-                    //Metódo 2 para gravar
-                    StreamWriter r = new StreamWriter(caminhoBaseClientes());
-                    r.WriteLine("nome;telefone;cpf;");
-                    foreach (Cliente c in clientes)
-                    {
-                        var linha = c.Nome + ";" + c.Telefone + ";" + c.Cpf + ";";
-                        r.WriteLine(linha);
-                    }
-                    r.Close();
+                    var linha = c.Nome + ";" + c.Telefone + ";" + c.Cpf + ";";
+                    r.WriteLine(linha);
                 }
+                r.Close();
             }
-            else
-            {
-                var usuario = Usuario.LerUsuarios();
-                Usuario u = new Usuario(this.Nome, this.Telefone, this.Cpf);
-                usuario.Add(u);
-
-                if (File.Exists(caminhoBaseUsuarios()))
-                {
-                    //string conteudo = "nome;telefone;cpf;\n";
-                    //foreach (Cliente c in clientes)
-                    //{
-                    //    conteudo += c.Nome + ";" + c.Telefone + ";" + c.Cpf + ";\n";
-                    //}
-                    //File.WriteAllText(caminhoBaseClientes(), conteudo);
-
-                    //Metódo 2 para gravar
-                    StreamWriter r = new StreamWriter(caminhoBaseUsuarios());
-                    r.WriteLine("nome;telefone;cpf;");
-                    foreach (Cliente c in usuario)
-                    {
-                        var linha = c.Nome + ";" + c.Telefone + ";" + c.Cpf + ";";
-                        r.WriteLine(linha);
-                    }
-                    r.Close();
-                }
-            }
-            
         }
 
-        private void Olhar()
+        public virtual void Olhar()
         {
             Console.WriteLine("O cliente " + this.Nome + " " + this.sobrenome + " está olhando para mim");
         }
 
-        private static string caminhoBaseClientes()
+        private static string caminhoBase()
         {
             return ConfigurationManager.AppSettings["BaseDeClientes"];
-        }
-
-        private static string caminhoBaseUsuarios()
-        {
-            return ConfigurationManager.AppSettings["BaseDeUsuarios"];
         }
 
         public static List<Cliente> LerClientes()
         {
             var clientes = new List<Cliente>();
-            if (File.Exists(caminhoBaseClientes()))
+            if (File.Exists(caminhoBase()))
             {
-                using (StreamReader arquivo = File.OpenText(caminhoBaseClientes()))
+                using (StreamReader arquivo = File.OpenText(caminhoBase()))
                 {
                     string linha;
                     int i = 0;
@@ -149,32 +114,5 @@ namespace Classes
             return clientes;
         }
 
-        public static List<Usuario> LerUsuarios()
-        {
-            var usuarios = new List<Usuario>();
-            if (File.Exists(caminhoBaseUsuarios()))
-            {
-                using (StreamReader arquivo = File.OpenText(caminhoBaseUsuarios()))
-                {
-                    string linha;
-                    int i = 0;
-                    while ((linha = arquivo.ReadLine()) != null)
-                    {
-                        i++;
-                        if (i == 1) continue;
-                        var usuarioArquivo = linha.Split(';');
-                        //var usuario = new Usuario(usuarioArquivo[0],usuarioArquivo[1],usuarioArquivo[2]);
-                        var usuario = new Usuario
-                        {
-                            Nome = usuarioArquivo[0],
-                            Telefone = usuarioArquivo[1],
-                            Cpf = usuarioArquivo[2]
-                        };
-                        usuarios.Add(usuario);
-                    }
-                }
-            }
-            return usuarios;
-        }
     }
 }
