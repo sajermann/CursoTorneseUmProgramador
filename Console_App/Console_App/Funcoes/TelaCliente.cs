@@ -29,7 +29,7 @@ namespace Funcoes
                 }
                 else if(valor == 1)
                 {
-                    var cliente = new Cliente("Bruno");
+                    var cliente = new Cliente();
                     Console.WriteLine("Digite o Nome do Cliente:");
                     cliente.Nome = Console.ReadLine();
                     Console.WriteLine("Digite o Telefone do Cliente:");
@@ -40,7 +40,7 @@ namespace Funcoes
                 }
                 else
                 {
-                    var clientes = Cliente.LerClientes();
+                    var clientes = new Cliente().Ler();
                     foreach (Cliente c in clientes)
                     {
                         Console.WriteLine(c.Nome);

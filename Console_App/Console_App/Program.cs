@@ -12,44 +12,35 @@ namespace Console_App
         static void Main(string[] args)
         {
             //Menu.Criar();
-            //Console.WriteLine("=============Cadastro de Cliente====================");
-            //Cliente c = new Cliente();
-            //c.Nome = "Cliente";
-            //c.Telefone = "uihsjduih";
-            //c.Cpf = "2156151515";
-            //c.Gravar();
-
-            //foreach (Cliente cl in Usuario.LerClientes())
-            //{
-            //    Console.WriteLine(cl.Nome);
-            //    Console.WriteLine(cl.Telefone);
-            //    Console.WriteLine(cl.Cpf);
-            //    Console.WriteLine("=================================");
-            //}
-
-            Ferramentas f = new Ferramentas();
-            f.ValidarCpf("9595");
-            
+            Console.WriteLine("=============Cadastro de Cliente====================");
             Cliente c = new Cliente();
+            c.Nome = "Cliente";
+            c.Telefone = "23223";
+            c.Cpf = "2156151515";
+            c.Gravar();
 
-            c.CalcularUmaMaisDois4();
+            foreach (Cliente cl in new Cliente().Ler())
+            {
+                Console.WriteLine(cl.Nome);
+                Console.WriteLine(cl.Telefone);
+                Console.WriteLine(cl.Cpf);
+                Console.WriteLine("=================================");
+            }
 
-            Console.WriteLine("=============Cadastro de Usuario====================");
+            Console.WriteLine("=============Cadastro de Usuário====================");
             Usuario u = new Usuario();
             u.Nome = "Usuário";
-            u.Telefone = "uihsjduih";
+            u.Telefone = "1199959595";
             u.Cpf = "2156151515";
-           // u.Gravar();
-            u.Olhar();
-
-            //foreach(Usuario us in Usuario.LerUsuarios())
-            //{
-            //    Console.WriteLine(us.Nome);
-            //    Console.WriteLine(us.Telefone);
-            //    Console.WriteLine(us.Cpf);
-            //    Console.WriteLine("=================================");
-            //}
-        
+            u.Gravar();
+            
+            foreach (Usuario us in new Usuario().Ler())
+            {
+                Console.WriteLine(us.Nome);
+                Console.WriteLine(us.Telefone);
+                Console.WriteLine(us.Cpf);
+                Console.WriteLine("=================================");
+            }
         }
     }
 }
