@@ -7,10 +7,12 @@ using Componentes;
 
 namespace Console_App
 {
+    
     class Program
     {
         static void Main(string[] args)
         {
+
             //Menu.Criar();
             Console.WriteLine("=============Cadastro de Cliente====================");
             Cliente c = new Cliente();
