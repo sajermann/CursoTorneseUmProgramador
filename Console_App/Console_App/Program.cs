@@ -10,8 +10,44 @@ namespace Console_App
     
     class Program
     {
+        //class Animal
+        //{
+        //    public string teste;
+        //    public virtual string teste2()
+        //    {
+        //        return "";
+        //    }
+        //}
+
+        //class Macaco : Animal
+        //{
+        //    public override string teste2()
+        //    {
+        //        return "sss";
+        //    }
+        //}
+
+        partial class Animal
+        {
+            public string teste;
+            partial void tt();
+        }
+
+        partial class Animal
+        {
+            public string teste2;
+            partial void tt()
+            {
+                Console.WriteLine("Teste");
+            }
+        }
+        
         static void Main(string[] args)
         {
+
+            var a = new Animal();
+            a.teste = "";
+
             var c = new Cachorro();
             c.Idade = 5;
             Console.WriteLine(c.Idade);
