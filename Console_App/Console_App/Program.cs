@@ -12,6 +12,18 @@ namespace Console_App
     {
         static void Main(string[] args)
         {
+            var c = new Cachorro();
+            c.Idade = 5;
+            Console.WriteLine(c.Idade);
+            Console.WriteLine(c.Idade2);
+            c.Idade2 = 6;
+            Console.WriteLine(c.Idade2);
+
+
+
+
+
+            /*
 
             //Menu.Criar();
             Console.WriteLine("=============Cadastro de Cliente====================");
@@ -42,7 +54,7 @@ namespace Console_App
                 Console.WriteLine(us.Telefone);
                 Console.WriteLine(us.Cpf);
                 Console.WriteLine("=================================");
-            }
+            }*/
         }
     }
 }
