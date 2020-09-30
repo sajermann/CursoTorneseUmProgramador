@@ -7,43 +7,47 @@ using Componentes;
 
 namespace Console_App
 {
-    
+    //class Animal
+    //{
+    //    public string teste;
+    //    public virtual string teste2()
+    //    {
+    //        return "";
+    //    }
+    //}
+
+    //class Macaco : Animal
+    //{
+    //    public override string teste2()
+    //    {
+    //        return "sss";
+    //    }
+    //}
+
+    partial class Animal
+    {
+        public string teste;
+        partial void tt();
+    }
+
+    partial class Animal
+    {
+        public string teste2;
+        partial void tt()
+        {
+            Console.WriteLine("Teste");
+        }
+    }
     class Program
     {
-        //class Animal
-        //{
-        //    public string teste;
-        //    public virtual string teste2()
-        //    {
-        //        return "";
-        //    }
-        //}
-
-        //class Macaco : Animal
-        //{
-        //    public override string teste2()
-        //    {
-        //        return "sss";
-        //    }
-        //}
-
-        partial class Animal
-        {
-            public string teste;
-            partial void tt();
-        }
-
-        partial class Animal
-        {
-            public string teste2;
-            partial void tt()
-            {
-                Console.WriteLine("Teste");
-            }
-        }
-        
         static void Main(string[] args)
         {
+            Email.Instancia.CorpoEmail = "Blablabla";
+            Email.Instancia.Titulo = "Título do email";
+            Email.Instancia.Origin = "contato@sajermann.com";
+            Email.Instancia.Destino = "contato@sajermann.com";
+
+            Email.Instancia.EnviarEmail();
 
             var a = new Animal();
             a.teste = "";
