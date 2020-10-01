@@ -14,6 +14,8 @@ namespace Tela
         public const int TABUADA = 2;
         public const int CALCULO_MEDIA = 3;
         public const int CADASTRAR_CLIENTES = 4;
+        public const int CADASTRAR_USUARIO = 5;
+        public const int CADASTRAR_FORNECEDOR = 6   ;
 
 
         public static void Criar()
@@ -21,14 +23,16 @@ namespace Tela
             while (true)
             {
                 string mensagem = " Olá Usuário, bem vindo ao programa\n" +
-                    "\n  Utilizando programação funcional" +
+                    "\n  Aplicação Console Final" +
                     "\n\n" +
                     "\n   Digite uma das opções abaixo:" +
                     "\n     0 - Sair do programa" +
                     "\n     1 - Para Ler arquivos" +
                     "\n     2 - Para Executar a tabuada" +
                     "\n     3 - Para Cálcular média de alunos" + 
-                    "\n     4 - Cadastrar Clientes";
+                    "\n     4 - Cadastrar Clientes" + 
+                    "\n     5 - Cadastrar Usuário" + 
+                    "\n     6 - Cadastrar Fornecedor";
                 Console.WriteLine(mensagem);
 
                 int valor = Convert.ToInt32(Console.ReadLine());
@@ -62,6 +66,18 @@ namespace Tela
                 {
                     Console.WriteLine("======================Opção Cadastrar Cliente======================");
                     TelaCliente.Chamar();
+                    Console.WriteLine("===================================================================");
+                } 
+                else if (valor == CADASTRAR_USUARIO)
+                {
+                    Console.WriteLine("======================Opção Cadastrar Usuário======================");
+                    TelaUsuario.Chamar();
+                    Console.WriteLine("===================================================================");
+                }
+                else if (valor == CADASTRAR_FORNECEDOR)
+                {
+                    Console.WriteLine("======================Opção Cadastrar Usuário======================");
+                    TelaFornecedor.Chamar();
                     Console.WriteLine("===================================================================");
                 }
                 else

@@ -43,12 +43,12 @@ namespace Classes
             
         }
 
-        private string diretorioComArquivo()
+        public string diretorioComArquivo()
         {
             return ConfigurationManager.AppSettings["CaminhoArquivos"] + this.GetType().Name + ".txt";
         }
 
-        public List<IPessoa> Ler()
+        public virtual List<IPessoa> Ler()
         {
             var dados = new List<IPessoa>();
             if (File.Exists(diretorioComArquivo()))
