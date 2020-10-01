@@ -1,0 +1,10 @@
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe.config
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\bin\Debug\WindowsFormsApp.exe
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\bin\Debug\WindowsFormsApp.pdb
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csprojAssemblyReference.cache
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.GenerateResource.cache
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form1.resources
