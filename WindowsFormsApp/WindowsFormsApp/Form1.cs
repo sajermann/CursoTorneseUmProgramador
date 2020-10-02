@@ -14,6 +14,7 @@ namespace WindowsFormsApp
     {
         public Form1()
         {
+            MessageBox.Show("Inicializando o formulário pelo construtor");
             InitializeComponent();
         }
 
@@ -27,6 +28,11 @@ namespace WindowsFormsApp
             var frmForm = new FrmShow();
             frmForm.lblMensagem.Text = TBResultado.Text;
             frmForm.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Inicializando o formulário");
         }
     }
 }
