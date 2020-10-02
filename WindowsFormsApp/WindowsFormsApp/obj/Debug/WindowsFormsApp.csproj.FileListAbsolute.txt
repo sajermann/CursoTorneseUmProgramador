@@ -7,5 +7,5 @@ E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsAp
 E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
 E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
 E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
-E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form1.resources
 E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FrmShow.resources
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form1.resources
