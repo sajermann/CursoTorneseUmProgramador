@@ -21,5 +21,12 @@ namespace WindowsFormsApp
         {
             TBResultado.Text = "Olá Bruno, este é o seu primeiro programa";
         }
+
+        private void btnAbrir_Click(object sender, EventArgs e)
+        {
+            var frmForm = new FrmShow();
+            frmForm.lblMensagem.Text = TBResultado.Text;
+            frmForm.Show();
+        }
     }
 }
