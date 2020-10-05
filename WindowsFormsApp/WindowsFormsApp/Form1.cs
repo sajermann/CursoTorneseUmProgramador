@@ -33,42 +33,50 @@ namespace WindowsFormsApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            comboBox1.Items.Clear();
-            foreach(Estado estado in Estado.Lista()){
-                comboBox1.Items.Add(estado);
+            //comboBox1.Items.Clear();
+            //comboBox1.DataSource = Estado.Lista();
+            //comboBox1.Text = "[Selecione]";
+            //foreach(Estado estado in Estado.Lista()){
+            //    comboBox1.Items.Add(estado);
+            //}
 
+
+            //Maneira simples de utilizar DataGridView;
+            /*
+             * dataGridView1.DataSource = Estado.Lista();
+             * 
+             */
+
+            //Maneira Complexa
+            /*
+            dataGridView1.ColumnCount = 2;
+            dataGridView1.Columns[0].Name = "ID";
+            dataGridView1.Columns[1].Name = "Nome";
+
+            var rows = new List<string[]>();
+            foreach(Estado estado in Estado.Lista())
+            {
+                string[] row1 = new string[] { estado.Id.ToString(), estado.Nome };
+                rows.Add(row1);
             }
+
+            foreach(string[] rowArray in rows)
+            {
+                dataGridView1.Rows.Add(rowArray);
+            }
+            */
+
+            //Utilizando o Link (Melhor por ser controlável)
+            var data = from estado in Estado.Lista()
+                       where estado.Id == 1 || estado.Id == 2
+                       orderby estado.Nome
+                       select new
+                       {
+                           Id = estado.Id,
+                           Nome = estado.Nome
+                       };
+            dataGridView1.DataSource = data.ToList();
         }
     }
-    public class Estado
-    {
-        public int Id;
-        public string Nome;
-
-        public override string ToString()
-        {
-            return this.Nome;
-
-        }
-        public static List<Estado> Lista()
-        {
-            var lista = new List<Estado>();
-            var e1 = new Estado();
-            e1.Id = 1;
-            e1.Nome = "SP";
-            lista.Add(e1);
-
-            e1 = new Estado();
-            e1.Id = 2;
-            e1.Nome = "MG";
-            lista.Add(e1);
-
-            e1 = new Estado();
-            e1.Id = 3;
-            e1.Nome = "RJ";
-            lista.Add(e1);
-
-            return lista;
-        }
-    }
+    
 }
