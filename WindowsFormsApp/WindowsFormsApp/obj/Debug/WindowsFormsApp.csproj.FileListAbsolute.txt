@@ -9,3 +9,7 @@ E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsAp
 E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
 E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FrmShow.resources
 E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form1.resources
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FrmTexto.resources
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FrmSobre.resources
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FrmDoacao.resources
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FrmLicenca.resources
