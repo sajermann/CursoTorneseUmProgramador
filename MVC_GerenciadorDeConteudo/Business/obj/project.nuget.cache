@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WFt6ZvxlDX84QQx5Uj/gMk9IJuzC/W4JA2dBXt4W4mG1bWuv5rDDC6WHENnv8cDdBccKkrsC71zsxHNifZpp3A==",
+  "success": true,
+  "projectFilePath": "E:\\Programação\\Github\\CursoTorneseUmProgramador\\MVC_GerenciadorDeConteudo\\Business\\Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Alemao\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Alemao\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
