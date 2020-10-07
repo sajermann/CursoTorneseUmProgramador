@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.TBResultado = new System.Windows.Forms.TextBox();
             this.BTOk = new System.Windows.Forms.Button();
@@ -44,6 +45,8 @@
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.licençaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.doaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.labelDiaHora = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -160,14 +163,14 @@
             // novoTextoToolStripMenuItem
             // 
             this.novoTextoToolStripMenuItem.Name = "novoTextoToolStripMenuItem";
-            this.novoTextoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novoTextoToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.novoTextoToolStripMenuItem.Text = "Novo Texto";
             this.novoTextoToolStripMenuItem.Click += new System.EventHandler(this.novoTextoToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -184,29 +187,47 @@
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.sobreToolStripMenuItem.Text = "Sobre";
             this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // licençaToolStripMenuItem
             // 
             this.licençaToolStripMenuItem.Name = "licençaToolStripMenuItem";
-            this.licençaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.licençaToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.licençaToolStripMenuItem.Text = "Licença";
             this.licençaToolStripMenuItem.Click += new System.EventHandler(this.licençaToolStripMenuItem_Click);
             // 
             // doaçãoToolStripMenuItem
             // 
             this.doaçãoToolStripMenuItem.Name = "doaçãoToolStripMenuItem";
-            this.doaçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doaçãoToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.doaçãoToolStripMenuItem.Text = "Doação";
             this.doaçãoToolStripMenuItem.Click += new System.EventHandler(this.doaçãoToolStripMenuItem_Click);
+            // 
+            // labelDiaHora
+            // 
+            this.labelDiaHora.AutoSize = true;
+            this.labelDiaHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDiaHora.Location = new System.Drawing.Point(766, 39);
+            this.labelDiaHora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDiaHora.Name = "labelDiaHora";
+            this.labelDiaHora.Size = new System.Drawing.Size(172, 26);
+            this.labelDiaHora.TabIndex = 9;
+            this.labelDiaHora.Text = "Dia e Hora Atual";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.labelDiaHora);
             this.Controls.Add(this.lblGrid);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
@@ -248,6 +269,8 @@
         private System.Windows.Forms.ToolStripMenuItem doaçãoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem novoTextoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.Label labelDiaHora;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

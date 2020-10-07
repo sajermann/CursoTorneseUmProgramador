@@ -76,6 +76,13 @@ namespace WindowsFormsApp
                            Nome = estado.Nome
                        };
             dataGridView1.DataSource = data.ToList();
+
+            atualizaHora();
+        }
+
+        private void atualizaHora()
+        {
+            labelDiaHora.Text = "Dia e hora atual: " + DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
         }
 
         private void novoTextoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -101,6 +108,11 @@ namespace WindowsFormsApp
         private void doaçãoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new FrmDoacao().Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            atualizaHora();
         }
     }
     
