@@ -25,16 +25,6 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
-      },
-      "Database/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "compile": {
-          "bin/placeholder/Database.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Database.dll": {}
-        }
       }
     }
   },
@@ -182,16 +172,10 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
-    },
-    "Database/1.0.0": {
-      "type": "project",
-      "path": "../Database/Database.csproj",
-      "msbuildProject": "../Database/Database.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Database >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -220,11 +204,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {
-            "E:\\Programação\\Github\\CursoTorneseUmProgramador\\MVC_GerenciadorDeConteudo\\Database\\Database.csproj": {
-              "projectPath": "E:\\Programação\\Github\\CursoTorneseUmProgramador\\MVC_GerenciadorDeConteudo\\Database\\Database.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

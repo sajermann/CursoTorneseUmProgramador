@@ -51,7 +51,6 @@ E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_
 E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_GerenciadorDeConteudo\bin\roslyn\VBCSCompiler.exe
 E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_GerenciadorDeConteudo\bin\roslyn\VBCSCompiler.exe.config
 E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_GerenciadorDeConteudo\bin\Antlr3.Runtime.dll
-E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_GerenciadorDeConteudo\bin\Database.dll
 E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_GerenciadorDeConteudo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_GerenciadorDeConteudo\bin\Microsoft.Web.Infrastructure.dll
 E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_GerenciadorDeConteudo\bin\Newtonsoft.Json.dll
@@ -63,7 +62,6 @@ E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_
 E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_GerenciadorDeConteudo\bin\System.Web.WebPages.dll
 E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_GerenciadorDeConteudo\bin\System.Web.WebPages.Razor.dll
 E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_GerenciadorDeConteudo\bin\WebGrease.dll
-E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_GerenciadorDeConteudo\bin\Database.pdb
 E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_GerenciadorDeConteudo\bin\System.Web.Helpers.xml
 E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_GerenciadorDeConteudo\bin\System.Web.Mvc.xml
 E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\MVC_GerenciadorDeConteudo\bin\System.Web.Optimization.xml
