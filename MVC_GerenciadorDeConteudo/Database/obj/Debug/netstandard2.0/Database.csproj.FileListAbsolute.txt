@@ -1,0 +1,9 @@
+E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\Database\bin\Debug\netstandard2.0\Database.deps.json
+E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\Database\bin\Debug\netstandard2.0\Database.dll
+E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\Database\bin\Debug\netstandard2.0\Database.pdb
+E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\Database\obj\Debug\netstandard2.0\Database.csprojAssemblyReference.cache
+E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\Database\obj\Debug\netstandard2.0\Database.AssemblyInfoInputs.cache
+E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\Database\obj\Debug\netstandard2.0\Database.AssemblyInfo.cs
+E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\Database\obj\Debug\netstandard2.0\Database.csproj.CoreCompileInputs.cache
+E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\Database\obj\Debug\netstandard2.0\Database.dll
+E:\Programação\Github\CursoTorneseUmProgramador\MVC_GerenciadorDeConteudo\Database\obj\Debug\netstandard2.0\Database.pdb
