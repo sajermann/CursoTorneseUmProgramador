@@ -33,6 +33,32 @@ namespace MVC_GerenciadorDeConteudo.Controllers
             pagina.Save();
             Response.Redirect("/paginas");
         }
+        public ActionResult Update(int id)
+        {
+            var pagina = Pagina.BuscaPorId(id);
+            ViewBag.Pagina = pagina;
+            return View();
+        }
+        [HttpPost]
+        public void ConfirmUpdate(int id)
+        {
+            try
+            {
+                var pagina = Pagina.BuscaPorId(id);
+
+                pagina.Nome = Request["nome"];
+                pagina.Conteudo = Request["conteudo"];
+                pagina.Data = Convert.ToDateTime(Request["data"]);
+                pagina.Save();
+
+                TempData["status"] = "Sucesso na alteração";
+            }
+            catch
+            {
+                TempData["status"] = "Ocorreu um erro no servidor";
+            }
+            Response.Redirect("/paginas");
+        }
 
     }
 }

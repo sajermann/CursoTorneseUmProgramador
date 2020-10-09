@@ -1,0 +1,27 @@
+﻿@using MVC_GerenciadorDeConteudo.Business;
+@{
+    Pagina paginas = ViewBag.Pagina;
+}
+
+<div class="jumbotron">
+    <h3>Editar Páginas</h3>
+    <div>
+        <a href="/paginas/" class="btn btn-default">Voltar</a>
+    </div>
+    <form action="/paginas/@paginas.Id/alterar" method="post">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" class="form-control" id="nome" value="@paginas.Nome" name="nome">
+        </div>
+        <div class="form-group">
+            <label for="data">Data:</label>
+            <input type="datetime" class="form-control" id="data" value="@paginas.Data" name="data">
+        </div>
+        <div class="form-group">
+            <label for="conteudo">Conteúdo:</label>
+            <textarea type="text" class="form-control" id="conteudo" name="conteudo" >@paginas.Conteudo</textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Alterar</button>
+    </form>
+
+</div>

@@ -6,6 +6,9 @@
 }
 
 <div class="jumbotron">
+    <div class="alert-danger">
+        @TempData["status"]
+    </div>
     <h3>Páginas</h3>
     <div>
         <a href="/paginas/novo" class="btn btn-default">Nova Página</a>
@@ -15,6 +18,7 @@
             <td>Id</td>
             <td>Nome</td>
             <td>Data</td>
+            <td>Ações</td>
         </tr>
         @foreach (var p in paginas)
         {
@@ -22,6 +26,7 @@
                 <td>@p.Id</td>
                 <td>@p.Nome</td>
                 <td>@p.Data</td>
+                <td><a href="/paginas/@p.Id/editar">Alterar</a></td>
             </tr>
 
         }

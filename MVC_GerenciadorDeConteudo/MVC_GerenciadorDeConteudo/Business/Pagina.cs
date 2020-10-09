@@ -36,5 +36,21 @@ namespace MVC_GerenciadorDeConteudo.Business
         {
             new Database.PaginaDB().Salvar(this.Id, this.Nome, this.Conteudo, this.Data);
         }
+
+        internal static Pagina BuscaPorId(int id)
+        {
+            var pagina = new Pagina();
+            var paginaDb = new Database.PaginaDB();
+            foreach (DataRow row in paginaDb.BuscaPorId(id).Rows)
+            {
+                
+                pagina.Id = Convert.ToInt32(row["id"]);
+                pagina.Nome = Convert.ToString(row["nome"]);
+                pagina.Conteudo = row["conteudo"].ToString();
+                pagina.Data = Convert.ToDateTime(row["data"]);
+            }
+
+            return pagina;
+        }
     }
 }
