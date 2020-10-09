@@ -31,5 +31,10 @@ namespace MVC_GerenciadorDeConteudo.Business
             return lista;
             
         }
+
+        internal void Save()
+        {
+            new Database.PaginaDB().Salvar(this.Id, this.Nome, this.Conteudo, this.Data);
+        }
     }
 }

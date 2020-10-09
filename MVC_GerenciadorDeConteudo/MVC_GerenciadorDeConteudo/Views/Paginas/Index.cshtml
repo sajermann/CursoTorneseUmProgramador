@@ -1,0 +1,31 @@
+﻿@using MVC_GerenciadorDeConteudo.Business;
+
+@{
+    ViewBag.Title = "Páginas";
+    List<Pagina> paginas = ViewBag.Paginas;
+}
+
+<div class="jumbotron">
+    <h3>Páginas</h3>
+    <div>
+        <a href="/paginas/novo" class="btn btn-default">Nova Página</a>
+    </div>
+    <table class="table">
+        <tr>
+            <td>Id</td>
+            <td>Nome</td>
+            <td>Data</td>
+        </tr>
+        @foreach (var p in paginas)
+        {
+            <tr>
+                <td>@p.Id</td>
+                <td>@p.Nome</td>
+                <td>@p.Data</td>
+            </tr>
+
+        }
+
+    </table>
+
+</div>

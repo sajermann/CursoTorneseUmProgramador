@@ -14,6 +14,23 @@ namespace MVC_GerenciadorDeConteudo
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                "paginas_novo",
+                "paginas/novo",
+                new { controller = "Paginas", action = "New" }
+            );
+            routes.MapRoute(
+                "paginas_criar",
+                "paginas/criar",
+                new { controller = "Paginas", action = "Create" }
+            );
+
+            routes.MapRoute(
+                "paginas",
+                "paginas",
+                new { controller = "Paginas", action = "Index" }
+            );
+
+            routes.MapRoute(
                 "sobre2",
                 "sobre/{id}/bruno",
                 new { controller = "Home", action = "about", id = 0 }

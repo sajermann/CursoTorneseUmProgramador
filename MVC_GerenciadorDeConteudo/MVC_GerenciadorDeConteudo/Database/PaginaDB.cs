@@ -28,7 +28,22 @@ namespace Database
                 DataTable table = new DataTable();
                 adapter.Fill(table);
                 return table;
+            }
+        }
 
+        internal void Salvar(int id, string nome, string conteudo, DateTime data)
+        {
+            using (SqlConnection connection = new SqlConnection(sqlConn()))
+            {
+                string queryString = "insert into paginas (nome, data, conteudo) values ('" + nome + "', '" + data.ToString("yyyy-MM-dd HH:mm:sss") + "', '" + conteudo + "')";
+                if(id != 0)
+                {
+                    queryString = "update paginas set nome = '" + nome + "', data = '" + data.ToString("yyyy-MM-dd HH:mm:ss") + "', conteuto = '" + conteudo + "' where id =" + id;
+                }
+                
+                SqlCommand command = new SqlCommand(queryString, connection);
+                command.Connection.Open();
+                command.ExecuteNonQuery();
             }
         }
     }

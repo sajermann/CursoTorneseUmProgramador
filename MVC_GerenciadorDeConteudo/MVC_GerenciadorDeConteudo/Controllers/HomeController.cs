@@ -13,10 +13,6 @@ namespace MVC_GerenciadorDeConteudo.Controllers
     {
         public ActionResult Index()
         {
-            var a = new Pagina();
-            
-            ViewBag.Paginas = a.Lista();
-
             return View();
         }
 
