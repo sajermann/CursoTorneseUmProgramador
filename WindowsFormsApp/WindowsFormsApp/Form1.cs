@@ -104,7 +104,10 @@ namespace WindowsFormsApp
 
         private void novoTextoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new FrmTexto().Show();
+            var FrmTexto = new FrmTexto();
+            FrmTexto.MdiParent = MDISingleton.InstanciaMDI();
+            FrmTexto.Show();
+
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
@@ -145,6 +148,11 @@ namespace WindowsFormsApp
         private void btnNotif_Click(object sender, EventArgs e)
         {
             notifyIcon1.ShowBalloonTip(10, "Notificação", TBResultado.Text, ToolTipIcon.Warning);
+        }
+
+        private void buttonMDIOpen_Click(object sender, EventArgs e)
+        {
+            new MDIParentPrincipal().Show();
         }
     }
     

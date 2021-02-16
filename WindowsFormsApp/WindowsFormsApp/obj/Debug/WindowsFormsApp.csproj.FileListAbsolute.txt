@@ -13,3 +13,4 @@ E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsAp
 E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FrmSobre.resources
 E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FrmDoacao.resources
 E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.FrmLicenca.resources
+E:\Programação\Github\CursoTorneseUmProgramador\WindowsFormsApp\WindowsFormsApp\obj\Debug\WindowsFormsApp.MDIParentPrincipal.resources

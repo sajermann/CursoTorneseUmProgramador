@@ -80,6 +80,13 @@
     <Compile Include="FrmTexto.Designer.cs">
       <DependentUpon>FrmTexto.cs</DependentUpon>
     </Compile>
+    <Compile Include="MDIParentPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParentPrincipal.Designer.cs">
+      <DependentUpon>MDIParentPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDISingleton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FrmSobre.cs">
@@ -105,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTexto.resx">
       <DependentUpon>FrmTexto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParentPrincipal.resx">
+      <DependentUpon>MDIParentPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
