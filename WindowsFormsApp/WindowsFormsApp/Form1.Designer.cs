@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.TBResultado = new System.Windows.Forms.TextBox();
             this.BTOk = new System.Windows.Forms.Button();
@@ -47,6 +50,8 @@
             this.doaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.labelDiaHora = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.btnNotif = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -55,28 +60,28 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 39);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(20, 60);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(466, 26);
+            this.label1.Size = new System.Drawing.Size(685, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "Pressione o ok para preencher a caixa de texto";
             // 
             // TBResultado
             // 
-            this.TBResultado.Location = new System.Drawing.Point(21, 83);
-            this.TBResultado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TBResultado.Location = new System.Drawing.Point(32, 128);
+            this.TBResultado.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.TBResultado.Name = "TBResultado";
-            this.TBResultado.Size = new System.Drawing.Size(690, 20);
+            this.TBResultado.Size = new System.Drawing.Size(673, 26);
             this.TBResultado.TabIndex = 1;
             // 
             // BTOk
             // 
             this.BTOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTOk.Location = new System.Drawing.Point(21, 123);
-            this.BTOk.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BTOk.Location = new System.Drawing.Point(32, 189);
+            this.BTOk.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.BTOk.Name = "BTOk";
-            this.BTOk.Size = new System.Drawing.Size(207, 94);
+            this.BTOk.Size = new System.Drawing.Size(310, 145);
             this.BTOk.TabIndex = 2;
             this.BTOk.Text = "OK";
             this.BTOk.UseVisualStyleBackColor = true;
@@ -85,10 +90,10 @@
             // btnAbrir
             // 
             this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbrir.Location = new System.Drawing.Point(237, 123);
-            this.btnAbrir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAbrir.Location = new System.Drawing.Point(356, 189);
+            this.btnAbrir.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnAbrir.Name = "btnAbrir";
-            this.btnAbrir.Size = new System.Drawing.Size(207, 94);
+            this.btnAbrir.Size = new System.Drawing.Size(310, 145);
             this.btnAbrir.TabIndex = 3;
             this.btnAbrir.Text = "Abrir Nova Janela";
             this.btnAbrir.UseVisualStyleBackColor = true;
@@ -102,10 +107,10 @@
             "Amazonas",
             "Rio de Janeiro",
             "São Paulo"});
-            this.comboBox1.Location = new System.Drawing.Point(29, 266);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Location = new System.Drawing.Point(44, 409);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(180, 21);
+            this.comboBox1.Size = new System.Drawing.Size(268, 28);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.Text = "Selecione";
             // 
@@ -113,41 +118,60 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 222);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(32, 342);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 26);
+            this.label2.Size = new System.Drawing.Size(133, 37);
             this.label2.TabIndex = 5;
             this.label2.Text = "Estados";
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(556, 167);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Location = new System.Drawing.Point(44, 498);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(346, 198);
+            this.dataGridView1.Size = new System.Drawing.Size(519, 305);
             this.dataGridView1.TabIndex = 6;
             // 
             // lblGrid
             // 
             this.lblGrid.AutoSize = true;
             this.lblGrid.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrid.Location = new System.Drawing.Point(551, 138);
-            this.lblGrid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGrid.Location = new System.Drawing.Point(36, 453);
+            this.lblGrid.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblGrid.Name = "lblGrid";
-            this.lblGrid.Size = new System.Drawing.Size(306, 26);
+            this.lblGrid.Size = new System.Drawing.Size(450, 37);
             this.lblGrid.TabIndex = 7;
             this.lblGrid.Text = "Dados da Coleção de Estados";
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem,
             this.infoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1200, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1800, 35);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -157,20 +181,20 @@
             this.novoTextoToolStripMenuItem,
             this.sairToolStripMenuItem});
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
-            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(91, 29);
             this.arquivoToolStripMenuItem.Text = "Arquivo";
             // 
             // novoTextoToolStripMenuItem
             // 
             this.novoTextoToolStripMenuItem.Name = "novoTextoToolStripMenuItem";
-            this.novoTextoToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.novoTextoToolStripMenuItem.Size = new System.Drawing.Size(204, 34);
             this.novoTextoToolStripMenuItem.Text = "Novo Texto";
             this.novoTextoToolStripMenuItem.Click += new System.EventHandler(this.novoTextoToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(204, 34);
             this.sairToolStripMenuItem.Text = "Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
@@ -181,27 +205,27 @@
             this.licençaToolStripMenuItem,
             this.doaçãoToolStripMenuItem});
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(60, 29);
             this.infoToolStripMenuItem.Text = "Info";
             // 
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(175, 34);
             this.sobreToolStripMenuItem.Text = "Sobre";
             this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // licençaToolStripMenuItem
             // 
             this.licençaToolStripMenuItem.Name = "licençaToolStripMenuItem";
-            this.licençaToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.licençaToolStripMenuItem.Size = new System.Drawing.Size(175, 34);
             this.licençaToolStripMenuItem.Text = "Licença";
             this.licençaToolStripMenuItem.Click += new System.EventHandler(this.licençaToolStripMenuItem_Click);
             // 
             // doaçãoToolStripMenuItem
             // 
             this.doaçãoToolStripMenuItem.Name = "doaçãoToolStripMenuItem";
-            this.doaçãoToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.doaçãoToolStripMenuItem.Size = new System.Drawing.Size(175, 34);
             this.doaçãoToolStripMenuItem.Text = "Doação";
             this.doaçãoToolStripMenuItem.Click += new System.EventHandler(this.doaçãoToolStripMenuItem_Click);
             // 
@@ -209,10 +233,10 @@
             // 
             this.labelDiaHora.AutoSize = true;
             this.labelDiaHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDiaHora.Location = new System.Drawing.Point(766, 39);
-            this.labelDiaHora.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDiaHora.Location = new System.Drawing.Point(744, 60);
+            this.labelDiaHora.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.labelDiaHora.Name = "labelDiaHora";
-            this.labelDiaHora.Size = new System.Drawing.Size(172, 26);
+            this.labelDiaHora.Size = new System.Drawing.Size(253, 37);
             this.labelDiaHora.TabIndex = 9;
             this.labelDiaHora.Text = "Dia e Hora Atual";
             // 
@@ -222,11 +246,32 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "Meu Programa \r\nLaboratório";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseClick);
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
+            // 
+            // btnNotif
+            // 
+            this.btnNotif.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotif.Location = new System.Drawing.Point(687, 189);
+            this.btnNotif.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.btnNotif.Name = "btnNotif";
+            this.btnNotif.Size = new System.Drawing.Size(310, 145);
+            this.btnNotif.TabIndex = 10;
+            this.btnNotif.Text = "Notificação";
+            this.btnNotif.UseVisualStyleBackColor = true;
+            this.btnNotif.Click += new System.EventHandler(this.btnNotif_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(1800, 1065);
+            this.Controls.Add(this.btnNotif);
             this.Controls.Add(this.labelDiaHora);
             this.Controls.Add(this.lblGrid);
             this.Controls.Add(this.dataGridView1);
@@ -238,8 +283,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.Name = "Form1";
             this.Text = "Aplicação 1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -271,6 +317,8 @@
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.Label labelDiaHora;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.Button btnNotif;
     }
 }
 

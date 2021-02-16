@@ -31,6 +31,16 @@ namespace WindowsFormsApp
             frmForm.Show();
         }
 
+        private void fechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        } 
+        
+        private void abrirDoacao_Click(object sender, EventArgs e)
+        {
+            new FrmDoacao().Show();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             //comboBox1.Items.Clear();
@@ -39,6 +49,13 @@ namespace WindowsFormsApp
             //foreach(Estado estado in Estado.Lista()){
             //    comboBox1.Items.Add(estado);
             //}
+
+            /*Configurando o Notify Icon*/
+            var contextMenu = new ContextMenu();
+            contextMenu.MenuItems.Add(new MenuItem("Fechar", fechar_Click));
+            contextMenu.MenuItems.Add(new MenuItem("Doação", abrirDoacao_Click));
+            notifyIcon1.ContextMenu = contextMenu;
+
 
 
             //Maneira simples de utilizar DataGridView;
@@ -113,6 +130,21 @@ namespace WindowsFormsApp
         private void timer1_Tick(object sender, EventArgs e)
         {
             atualizaHora();
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("Cliquei 2x no ícone");
+        }
+
+        private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("Cliquei no ícone");
+        }
+
+        private void btnNotif_Click(object sender, EventArgs e)
+        {
+            notifyIcon1.ShowBalloonTip(10, "Notificação", TBResultado.Text, ToolTipIcon.Warning);
         }
     }
     
